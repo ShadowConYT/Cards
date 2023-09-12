@@ -9,8 +9,8 @@
     <div class="container">
         <div class="card">
             <div class="text">
-            <p id="Head">Satoru Gojo</p>
-            <p id="subHead">Jujutsu Kaisen</p>
+            <p id="Head">Monkey D Luffy</p>
+            <p id="subHead">King of the Pirates</p>
             </div>
             <div class="image">
                 <img id="luffy" src="./assets/Luffy.png" alt="Gojo" />
@@ -29,9 +29,17 @@
             border: 3px solid black;
             border-radius: 10px;
             background-color: #f3b43a;
-            box-shadow: 0 0 100px #f3b43a;
             overflow: hidden;
             overflow-y: hidden;
+            transition: 0.5s;
+
+        }
+
+        .card:hover{
+            box-shadow: 00 0 75px #f3b43a;
+            transition: 0.5s;
+            transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+            transform: scale(1.05);
         }
 
 
@@ -74,7 +82,7 @@
         }
 
         #Head{
-            font-size: 2em;
+            font-size: 1.7em;
             color: white;
         }
 
