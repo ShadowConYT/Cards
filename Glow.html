@@ -7,13 +7,13 @@
 </head>
 <body>
     <div class="container">
-        <div class="card">
+        <div class="card" onmouseover="changeImage('./assets/gear5.png')" onmouseout="mouseLeave('./assets/luffy.png')">
             <div class="text">
             <p id="Head">Monkey D Luffy</p>
             <p id="subHead">King of the Pirates</p>
             </div>
             <div class="image">
-                <img onmouseover="changeImage('./assets/gear5.png')" onmouseleave="mouseLeave('./assets/luffy.png')" id="luffy" src="./assets/Luffy.png" alt="Gojo" />
+                <img id="luffy" src="./assets/Luffy.png" alt="Gojo" />
             </div>
         </div>
     </div>
@@ -92,18 +92,32 @@
     </style>
     <script>
         let ima = document.getElementById('luffy')
+        let hedd = document.getElementById('Head')
+        let subhedd = document.getElementById('subHead')
+        let hedd1 = hedd;
+        let subhedd1 = subhedd;
+        let bg = document.querySelector('.card');
+
 
 
         function changeImage(imagee){
-            document.getElementById("luffy").src = imagee;
-            document.getElementById('luffy').style.transform = 'ScaleX(1.2)';
-            document
+            ima.src = imagee;
+            ima.style.transform = 'Scale(1.2)';
+            ima.style.transition = '0.5s';
+            ima.style.transitionTimingFunction = "cubic-bezier(0.42, 0, 0.58, 1);"
+            hedd1.innerText = "Gear 5";
+            subhedd1.innerText = "SunGod Nika"
+            bg.style.backgroundColor = "grey";
+            
         }
 
         function mouseLeave(imageee){
-            document.getElementById("luffy").src = imageee;
-            document.getElementById('luffy').style.transform = 'ScaleX(1)';
-
+            ima.src = imageee;
+            ima.style.transform = 'Scale(1)';
+            hedd1.innerHTML = "Monkey D Luffy";
+            subhedd1.innerHTML = "King of the Pirates";
+            bg.style.backgroundColor = "#f3b43a";
+            bg.style.boxShadow = "0 0 75px grey"
 
         }
     </script>
