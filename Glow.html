@@ -91,12 +91,20 @@
         }
     </style>
     <script>
+        let ima = document.getElementById('luffy')
+
+
         function changeImage(imagee){
             document.getElementById("luffy").src = imagee;
+            document.getElementById('luffy').style.transform = 'ScaleX(1.2)';
+            document
         }
 
         function mouseLeave(imageee){
             document.getElementById("luffy").src = imageee;
+            document.getElementById('luffy').style.transform = 'ScaleX(1)';
+
+
         }
     </script>
 </body>
