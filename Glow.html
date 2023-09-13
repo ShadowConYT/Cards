@@ -13,7 +13,7 @@
             <p id="subHead">King of the Pirates</p>
             </div>
             <div class="image">
-                <img id="luffy" src="./assets/Luffy.png" alt="Gojo" />
+                <img id="luffy" hover="overu()" src="./assets/Luffy.png" alt="Gojo" />
             </div>
         </div>
     </div>
@@ -90,5 +90,12 @@
             font-size:1em;
         }
     </style>
+    <script>
+        let image = document.getElementById("luffy");
+
+        function overu(){
+            image.src = './assets/gear5.png';
+        }
+    </script>
 </body>
 </html>
