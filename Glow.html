@@ -13,7 +13,7 @@
             <p id="subHead">King of the Pirates</p>
             </div>
             <div class="image">
-                <img id="luffy" hover="overu()" src="./assets/Luffy.png" alt="Gojo" />
+                <img onmouseover="changeImage('./assets/gear5.png')" onmouseleave="mouseLeave('./assets/luffy.png')" id="luffy" src="./assets/Luffy.png" alt="Gojo" />
             </div>
         </div>
     </div>
@@ -91,10 +91,12 @@
         }
     </style>
     <script>
-        let image = document.getElementById("luffy");
+        function changeImage(imagee){
+            document.getElementById("luffy").src = imagee;
+        }
 
-        function overu(){
-            image.src = './assets/gear5.png';
+        function mouseLeave(imageee){
+            document.getElementById("luffy").src = imageee;
         }
     </script>
 </body>
