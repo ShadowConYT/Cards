@@ -6,14 +6,10 @@ In This Repository, You Can Find simply implemented minimalistic and colorful HT
 
 ## Card Designs
 
-<p float="center" style="display:flex;" >
-  <div>
+<p float="center" >
     <img src="results/minimal.png" width="300" />
-    <p>Minimal Card Design</p>
-  </div>
+    <caption>Minimal Card Design</caption>
   
-  <div>
     <img src="results/Glow.gif" width="350" />
-    <p>On Hover Glow and Change Card</p>
-  </div>
+    <caption>On Hover Glow and Change Card</caption>
 </p>
