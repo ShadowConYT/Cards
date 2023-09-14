@@ -6,8 +6,6 @@ In This Repository, You Can Find simply implemented minimalistic and colorful HT
 
 ## Card Designs
 
-![Minimal](results/minimal.png)
-### Minimal Card Design
+![Minimal](results/minimal.png) ![Glow](results/Glow.gif)
 
-![Glow](results/Glow.gif)
-### On Hover Glow and Change Card
+### Minimal Card Design         ### On Hover Glow and Change Card
