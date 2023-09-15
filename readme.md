@@ -3,6 +3,7 @@
 
 In This Repository, You Can Find simply implemented minimalistic and colorful HTML Card Designs For your Project 
 
+Easily Drag and Drop Code Separate File for Each Card
 
 ## Card Designs
 
