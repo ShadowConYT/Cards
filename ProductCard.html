@@ -3,9 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Product Card</title>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="card" style="display: flex; min-width: 350px; max-width: 500px;">
+            <div class="bg">
+                <img src="" alt="">
+            </div>
+            <div class="textBox">
+                <h1 class="text">Unisex Sneakers</h1>
+                <p class="text">Chuck Taylor Converse Sneakers are Unisex, They have both the Men's and women's sizes on the little tag inside the shoe. </p>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .container{
+            text-align: center;           
+        }
+
+        .text{
+            padding: 0 15px 0 5px;
+            color: #1f1d1d;
+            text-align: justify;
+        }
+
+        .textBox{
+            background-color: aliceblue;
+            border-radius: 15px;
+            padding: 0 0px 0 15px;
+        }
+
+        .card{
+            border:2px solid black;
+            border-radius: 15px;
+        }
+        .bg{
+            padding: 0 15px 0 0px;
+            border-radius: 15px;
+            height: 250px;
+            min-width: 300px;
+            background-image: url(https://s1.dswcdn.com/uploads/Nike_Other_Basketball_Shoes/Air_More_Uptempo/Nike_Air_More_Uptempo_Basketball_Unisex_Shoes_Black_White_414962-002.jpg);
+            background-size: cover;
+            transition: 0.5s ease-in-out;
+        }
+
+        .bg:hover{
+            transition: 0.5s ease-in-out;
+            transform: scaleX(1.02);
+            background-image: url(https://s1.dswcdn.com/uploads/Nike_Other_Basketball_Shoes/Air_More_Uptempo/Nike_Air_More_Uptempo_Basketball_Unisex_Shoes_Black_White_414962-002_P2.jpg); 
+        }
+    </style>
 </body>
 </html>
